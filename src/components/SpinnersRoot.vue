@@ -148,7 +148,7 @@ function updateSpindataToStop(no: number){
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns:repeat(auto-fit,minmax(200px,1fr) );
+        grid-template-columns:repeat(auto-fit,minmax(310px,1fr) );
 
         grid-auto-flow: row;
         grid-gap: 2px;
@@ -158,8 +158,8 @@ function updateSpindataToStop(no: number){
     .spinners_item{
 
         width: auto;
-        height: 100px;
-        line-height: 100px;
+        height: 150px;
+        line-height: 150px;
         aspect-ratio: 16 / 9;
     }
 

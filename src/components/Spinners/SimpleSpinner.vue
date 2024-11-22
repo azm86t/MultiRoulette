@@ -130,19 +130,20 @@ watch (
         background:linear-gradient(#31a378,#2a8a12,#31a378) ;
         display: block;
         text-align: center;
+        font-size: 2.5em;
     }
 
     .spin_np{
         left: 1px;
         top: 1px;
         text-align: left;
+
     }
 
     .select_item{
         text-align: center;
         left:50%;
         padding: auto;
-        
     }
 
 

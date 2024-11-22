@@ -56,18 +56,22 @@ const roulettConfig: Ref<RoulettConfig> = ref(
   height: 1;
 }
 header {
-  line-height: 5vh;
-  height: 5vh;
+  line-height: 10vh;
+  height: 10vh;
   width: 100%;
   position: sticky;
   top: 0;
   background: linear-gradient(#caedee,#7fcc7c,#caedee);
+  padding-left: 10vh;
+  font-size: 250%;
+  color: rgb(102, 93, 50);;
 }
 
 main {
-  top: 5vh;
+  top: 10vh;
   left: 0;
   height: auto;
+  min-height: 90vh;
   width: 100%;
   padding: 2vh;
   background: radial-gradient(#7fcc7c,transparent);
