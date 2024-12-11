@@ -3,7 +3,7 @@ import type { SpinData } from '@/models/SpinData';
 import { ref, watch, type PropType } from 'vue';
 
 
-var isSpinning: boolean = false;
+let isSpinning: boolean = false;
 
 let spinIntervalNum: number;
 const currentItem = ref("");
@@ -71,15 +71,15 @@ function start(interval: number){
  */
 function createWheelItem(){
 
-    var sel = prpops.spinData.spinItems[prpops.spinData.selected];
+    const sel = prpops.spinData.spinItems[prpops.spinData.selected];
 
     // ソース配列のコピーから選ばれる要素を削除してシャッフル
-    var w = [...prpops.spinData.spinItems];
+    const w = [...prpops.spinData.spinItems];
     w.splice (prpops.spinData.selected ,1);
     for (let i = w.length - 1; i >= 0; i--) {
-      let rand = Math.floor(Math.random() * (i + 1))
+      const rand = Math.floor(Math.random() * (i + 1))
       // 配列の要素の順番を入れ替える
-      let tmpStorage = w[i];
+      const tmpStorage = w[i];
       w[i] = w[rand];
       w[rand] = tmpStorage;
     }

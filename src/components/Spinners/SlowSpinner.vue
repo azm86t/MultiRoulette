@@ -3,7 +3,7 @@ import type { SpinData } from '@/models/SpinData';
 import { ref, watch, type PropType } from 'vue';
 
 
-var isSpinning: boolean = false;
+let isSpinning: boolean = false;
 
 let spinIntervalNum: number;
 const currentItem = ref("");
